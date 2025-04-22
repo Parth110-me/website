@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Parthib Pattnayak | Portfolio</title>
   <style>
     * {
@@ -93,18 +93,33 @@
       margin-bottom: 30px;
     }
 
-    .testimonial {
+    .testimonial-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
       background-color: #ffffff;
       border-left: 5px solid #f26b38;
       padding: 20px;
-      margin-bottom: 30px;
       border-radius: 8px;
     }
 
-    .testimonial h3 {
+    .testimonial-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #f26b38;
+    }
+
+    .testimonial-content h3 {
       margin-bottom: 10px;
       font-size: 1.3rem;
       color: #102542;
+    }
+
+    .testimonial-content p {
+      font-size: 1.05rem;
     }
 
     footer {
@@ -138,6 +153,15 @@
         width: 200px;
         height: 200px;
       }
+
+      .testimonial-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .testimonial-img {
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
@@ -145,7 +169,7 @@
 
 <header>
   <div>
-    <img src="parthib.jpg" alt="Parthib Pattnayak" class="avatar-img">
+    <img src="parthib_photo.jpg" alt="Parthib Pattnayak" class="avatar-img" />
     <h1>Parthib Pattnayak</h1>
   </div>
   <p>Leader | Event Organizer | State Badminton Player | Scout & Guide Awardee</p>
@@ -186,25 +210,34 @@
 <section>
   <h2>Testimonials</h2>
 
-  <div class="testimonial">
-    <h3>Omkar Gahir</h3>
-    <p>“Parthib has always been an inspiring leader among us. His ability to lead, motivate and bring out the best in others is exceptional. I’m proud to call him a friend and a batchmate.”</p>
+  <div class="testimonial-container">
+    <img src="omkar.jpg" alt="Omkar Gahir" class="testimonial-img">
+    <div class="testimonial-content">
+      <h3>Omkar Gahir</h3>
+      <p>“Parthib has always been an inspiring leader among us. His ability to lead, motivate and bring out the best in others is exceptional. I’m proud to call him a friend and a batchmate.”</p>
+    </div>
   </div>
 
-  <div class="testimonial">
-    <h3>Muddit Gupta</h3>
-    <p>“Working alongside Parthib has been an enriching experience. His event management skills and positive energy turn every challenge into an opportunity. A genuine asset to any team.”</p>
+  <div class="testimonial-container">
+    <img src="mudit.jpg" alt="Muddit Dhawane" class="testimonial-img">
+    <div class="testimonial-content">
+      <h3>Muddit Gupta</h3>
+      <p>“Working alongside Parthib has ben an enriching experience. His event management skills and positive energy turn every challenge into an opportunity. A genuine asset to any team.”</p>
+    </div>
   </div>
 
-  <div class="testimonial">
-    <h3>Rupanjali Dutta</h3>
-    <p>“Parthib is a visionary and an excellent team player. His leadership in both academic and extracurricular settings is remarkable. Always dependable and driven by purpose.”</p>
+  <div class="testimonial-container">
+    <img src="rupanjali.jpg" alt="Rupanjali Dutta" class="testimonial-img">
+    <div class="testimonial-content">
+      <h3>Rupanjali Dutta</h3>
+      <p>“Parthib is a visionary and an excellent team player. His leadership in both academic and extracurricular settings is remarkable. Always dependable and driven by purpose.”</p>
+    </div>
   </div>
 </section>
 
 <section>
   <h2>Contact</h2>
-  <img src="parthib.jpg" alt="Parthib Pattnayak" class="avatar-img">
+  <div class="flex-container">
     <div class="inline-img"></div>
     <div>
       <p><strong>Email:</strong> <a href="mailto:parthibpattnayak706@gmail.com">parthibpattnayak706@gmail.com</a></p>
